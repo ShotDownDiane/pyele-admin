@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录授权失败</title>
+</head>
+<body>
+<div style="text-align: center;">
+    <h3 style="color: red;">登录授权失败： {{ error_msg }}</h3>
+    <button type="button" id="to-oauth">重新授权</button>
+</div>
+<script type="application/javascript">
+    document.getElementById('to-oauth').onclick = function () {
+        window.location.href = '/books/auth'
+    }
+</script>
+</body>
+</html>

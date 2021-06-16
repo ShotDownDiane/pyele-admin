@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录授权成功</title>
+</head>
+<body>
+<h3>登录成功<span id="show">3</span>后关闭当前窗口</h3>
+<script type="text/javascript">
+    let time = 3;
+    localStorage.setItem('oauth-state', '{{ state }}')
+    localStorage.setItem('oauth-token', JSON.stringify({
+        'access_token': '{{ access_token }}',
+        'expires_in': '{{ expires_in }}',
+        'token_type': '{{ token_type }}',
+        'refresh_token': '{{ refresh_token }}'
+    }))
+
+    function closeWindow() {
+        if (time > 0) {
+            document.getElementById("show").innerHTML = " <span style='color: red'>" + time + "</span>秒";
+            time--;
+            window.setTimeout('closeWindow()', 1000);
+        } else {
+            window.open("about:blank", "_self").close()
+        }
+    }
+
+    closeWindow()
+</script>
+</body>
+</html>
