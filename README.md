@@ -52,10 +52,10 @@ apps  应用列表
 ##### pyeleadmin 后台地址 http://127.0.0.1:8100/pyele-admin/
 
 
-##### 预览图片
+##### 预览图
 
-![Image](https://github.com/xyako/pyele-admin/dist/images/1.png)
+![Image](http://era.didili.cn/dist/images/1.png)
 
-![Image](https://github.com/xyako/pyele-admin/dist/images/2.png)
+![Image](http://era.didili.cn/dist/images/2.png)
 
-![Image](https://github.com/xyako/pyele-admin/dist/images/3.png)
+![Image](http://era.didili.cn/dist/images/3.png)
