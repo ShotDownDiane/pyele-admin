@@ -48,6 +48,11 @@ apps  应用列表
 │  └─utools.php         工具库
 ```
 
+##### 数据迁移命令
+```
+python manage.py makemigrations
+python manage.py migrate
+```
 ##### django 后台地址 http://127.0.0.1:8100/django-admin/
 ##### pyeleadmin 后台地址 http://127.0.0.1:8100/pyele-admin/
 
